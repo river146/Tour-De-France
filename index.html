@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tour De France</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+
+        <section>
+            <img src="introduction-images/stars.png" id="stars">
+            <img src="introduction-images/moon.png" id="moon">
+            <img src="introduction-images/mountains_behind.png" id="mountains_behind">
+            <div class="text-box"></div>
+                <h2 id="text">Tour de France</h2>
+            </div>
+            <a href="#sec" id="btn">Explore</a>
+            <img src="introduction-images/mountains_front.png" id="mountains_front">
+        </section>
+        
+        </div>
+
+        <div class="sec" id="sec"> 
+            <h2>Bienvenue au Tour de France</h2> 
+            <p>The Tour de France is an annual men's multiple-stage bicycle race primarily held in France, while also occasionally passing through nearby countries. Like the other Grand Tours (the Giro d'Italia and the Vuelta a España), it consists of 21 stages, each a day long, over the course of 23 days. <br> <br> The race was first organized in 1903 to increase sales for the newspaper L'Auto and is currently run by the Amaury Sport Organisation. The race has been held annually since its first edition in 1903 except when it was stopped for the two World Wars. As the Tour gained prominence and popularity, the race was lengthened and its reach began to extend around the globe. Participation expanded from a primarily French field as more riders from all over the world began to participate in the race each year.</p>
+
+        </div>
+ 
+            <div class="cont">
+             <div class="card">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                 <div class="cont">
+                     <h2>01</h2>
+                     <h3>Fast Riders</h3>
+                     <p>The youngest rider ever to win the Tour de France was Henri Comet – he was only 19 years, 352 days when he won the second ever Tour in 1904. The oldest person to win the Tour de France was Firmin Lambot, who was 36 years old when he won in 1922.</p>
+                     <a href="https://www.cyclesprog.co.uk/family-cycling-advice/tour-de-france/tour-de-france-kids-guide/#:~:text=A%20few%20interesting%20Tour%20de%20France%20facts&text=The%20youngest%20rider%20ever%20to,second%20ever%20Tour%20in%201904.&text=The%20oldest%20person%20to%20win,when%20he%20won%20in%201922.">Read More</a>
+                 </div>
+             </div>
+             <div class="card">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                 <div class="cont">
+                     <h2>02</h2>
+                     <h3>Women in Tour De France</h3>
+                     <p>The first attempt at a women’s Tour took place in 1955, when 41 women competed in the five-day Tour de France Féminin, put on by French journalist and race director Jean Leulliot. But without stable financial backing, the race disappeared the following year.</p>
+                     <a href="https://www.outsideonline.com/outdoor-adventure/biking/why-there-no-womens-tour-de-france/">Read More</a>
+                 </div>
+             </div>
+             <div class="card">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                 <div class="cont">
+                     <h2>03</h2>
+                     <h3>Jersey Trivia</h3>
+                     <p>There are four jerseys awarded during the course of the Tour de France each year. Most fans know about the big one: the overall race leader’s yellow jersey. But the other three—the green, polka dot, and white jerseys—also play significant roles.</p>
+                     <a href="https://www.bicycling.com/tour-de-france/a22091015/tour-de-france-jerseys/">Read More</a>
+                 </div>
+             </div>
+         </div>
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+            let nav = document.querySelector('header');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+          
+            })
+        </script>
+
+            <div class="footer">
+            <p>Made with <i class="fa fa-heart-o"></i> by Raunaq </p>
+        </div>
+    
+        
+</section>
+
+
+    </body>
+</html>
